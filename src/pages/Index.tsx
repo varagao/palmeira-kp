@@ -5,7 +5,7 @@ import { KeypadComboButton } from "@/components/keypad/KeypadComboButton";
 
 const Index = () => {
   return (
-    <div className="justify-center items-stretch bg-[#CCFFF2] flex max-w-[480px] w-full flex-col overflow-hidden mx-auto px-6">
+    <div className="justify-center items-stretch bg-[#F2FCE2] flex max-w-[480px] w-full flex-col overflow-hidden mx-auto px-6">
       <KeypadHeader title="Keypad" number="8" subtitle="perto do Mudroom" />
 
       <main className="justify-center items-stretch border-t-[color:var(--PALM-PRIMA,#1E09BB)] border-b-[color:var(--PALM-PRIMA,#1E09BB)] flex w-full flex-col mt-8 py-6 border-t border-solid border-b">
