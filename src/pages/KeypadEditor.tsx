@@ -1,30 +1,41 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { keypads, KeypadConfig, KeypadButton } from "@/data/keypads";
+import { keypads, KeypadConfig } from "@/data/keypads";
 import { toast } from "sonner";
 
+// Create a local copy of keypads that we can modify
+// This is necessary because we can't directly modify the imported constant
 const KeypadEditor = () => {
   const navigate = useNavigate();
   const [selectedKeypad, setSelectedKeypad] = useState<string>(keypads[0].id);
   
-  // This would be connected to local storage or a backend in a real application
+  // Create a mutable copy of the keypads array
+  const [localKeypads, setLocalKeypads] = useState<KeypadConfig[]>([...keypads]);
+  
+  // State for the JSON editor
   const [keypadData, setKeypadData] = useState<string>(
-    JSON.stringify(keypads, null, 2)
+    JSON.stringify(localKeypads, null, 2)
   );
   
   const handleSave = () => {
     try {
-      // In a real application, this would save to localStorage or a backend
-      // For demo purposes, we'll just show a success message
-      JSON.parse(keypadData); // Validate JSON
+      // Parse and validate the JSON
+      const updatedKeypads = JSON.parse(keypadData) as KeypadConfig[];
+      
+      // Update our local state
+      setLocalKeypads(updatedKeypads);
+      
+      // Store in localStorage for persistence
+      localStorage.setItem('keypads', keypadData);
+      
       toast.success("Keypad configurations saved!");
       
-      // In a real app, we would update the keypads array here
-      // Since we can't directly modify the imported constant, we'll just simulate success
+      // Force reload to apply changes (in a real app, we would use context or state management)
+      window.location.reload();
     } catch (error) {
       toast.error("Invalid JSON format. Please check your syntax.");
     }
@@ -33,8 +44,8 @@ const KeypadEditor = () => {
   const handleKeypadSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedKeypad(e.target.value);
     
-    // In a real application, we might load the specific keypad data here
-    // For now, we're showing all keypads in the JSON editor
+    // For this demo, we're showing all keypads in the editor
+    // In a real app, we might filter to show only the selected keypad
   };
   
   const exportConfigAsFile = () => {
@@ -83,7 +94,7 @@ const KeypadEditor = () => {
             onChange={handleKeypadSelect}
             className="w-full p-2 border border-gray-300 rounded-md"
           >
-            {keypads.map(keypad => (
+            {localKeypads.map(keypad => (
               <option key={keypad.id} value={keypad.id}>
                 Keypad {keypad.number} - {keypad.subtitle}
               </option>

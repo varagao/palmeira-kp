@@ -1,14 +1,29 @@
 
 import { keypads } from "@/data/keypads";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const KeypadsList = () => {
+  const [localKeypads, setLocalKeypads] = useState(keypads);
+  
+  // Load keypads from localStorage if available
+  useEffect(() => {
+    const savedKeypads = localStorage.getItem('keypads');
+    if (savedKeypads) {
+      try {
+        setLocalKeypads(JSON.parse(savedKeypads));
+      } catch (error) {
+        console.error("Error parsing saved keypads:", error);
+      }
+    }
+  }, []);
+
   return (
     <div className="max-w-4xl mx-auto p-6">
       <h1 className="text-3xl font-bold text-[#1E09BB] mb-8">All Keypads</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {keypads.map(keypad => (
+        {localKeypads.map(keypad => (
           <Link 
             key={keypad.id} 
             to={`/keypad/${keypad.id}`}
