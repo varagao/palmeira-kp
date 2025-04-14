@@ -1,4 +1,6 @@
 
+import React from 'react';
+
 interface KeypadButtonProps {
   label: string;
   align?: "left" | "right";
@@ -16,7 +18,7 @@ export const KeypadButton = ({
         <div className="rounded border border-[color:var(--PALM-PRIMA,#1E09BB)] flex min-h-[9px] w-3 border-solid" />
       </div>
       <div
-        className={`min-w-60 text-lg text-[#1E09BB] font-medium uppercase tracking-[0.9px] leading-[1.1] flex-1 shrink basis-[0%] my-auto ${align === "right" ? "text-right" : ""}`}
+        className={`min-w-60 text-lg text-[#1E09BB] font-medium uppercase tracking-[0.9px] leading-[1.1] flex-1 shrink basis-[0%] my-auto ${align === "right" ? "text-right" : "text-left"}`}
       >
         {label}
       </div>
@@ -29,7 +31,8 @@ export const KeypadButton = ({
       onClick={onClick}
       type="button"
     >
-      {align === "right" ? buttonContent : buttonContent}
+      {buttonContent}
     </button>
   );
 };
+
