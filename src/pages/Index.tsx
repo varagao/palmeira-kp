@@ -1,3 +1,4 @@
+
 import { KeypadHeader } from "@/components/keypad/KeypadHeader";
 import { KeypadButton } from "@/components/keypad/KeypadButton";
 import { KeypadDivider } from "@/components/keypad/KeypadDivider";
@@ -10,22 +11,22 @@ const Index = () => {
 
       <main className="justify-center items-stretch border-t-[color:var(--PALM-PRIMA,#1E09BB)] border-b-[color:var(--PALM-PRIMA,#1E09BB)] flex w-full flex-col mt-8 py-6 border-t border-solid border-b">
         <section className="flex w-full flex-col items-stretch justify-center">
-          <KeypadButton label="Spot Entrada" />
+          <KeypadButton label="Spot Entrada" align="left" />
           <img src="https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true" className="object-contain w-full mt-3" />
 
-          <KeypadButton label="Spot Sofá" />
+          <KeypadButton label="Spot Sofá" align="left" />
           <img src="https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/45ca1fe83a76683fda5fb7142f84d30623446069?placeholderIfAbsent=true" className="object-contain w-full mt-3" />
 
-          <KeypadButton label="Pendente Jantar" />
+          <KeypadButton label="Pendente Jantar" align="left" />
           <img src="https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/60f12d74e2856cfc3114cb693d1a3ff8673ecdf0?placeholderIfAbsent=true" className="object-contain w-full mt-3" />
 
-          <KeypadButton label="Mudroom" />
+          <KeypadButton label="Mudroom" align="left" />
           <img src="https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/5578c3ff9419c0eaf194b8ca847ac66cf426d949?placeholderIfAbsent=true" className="object-contain w-full mt-3" />
 
-          <KeypadButton label="Piscina" />
+          <KeypadButton label="Piscina" align="left" />
           <img src="https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/1c6c906150767ab68967dcbbbd3c68885a24257e?placeholderIfAbsent=true" className="object-contain w-full mt-3" />
 
-          <KeypadButton label="Música Jantar / Playlist" />
+          <KeypadButton label="Música Jantar / Playlist" align="left" />
         </section>
 
         <KeypadDivider />
