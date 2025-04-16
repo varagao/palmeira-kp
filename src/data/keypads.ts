@@ -17,6 +17,7 @@ export interface KeypadConfig {
 // Sample data for all keypads
 export const keypads: KeypadConfig[] = [
   {
+    //1
     id: "keypad-1",
     title: "Keypad",
     number: "1",
@@ -62,8 +63,9 @@ export const keypads: KeypadConfig[] = [
         type: "standard",
         imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/1c6c906150767ab68967dcbbbd3c68885a24257e?placeholderIfAbsent=true",
-      }, //6
+      },
       {
+        //6
         label: "Música Suite Master",
         align: "left",
         type: "standard",
@@ -123,34 +125,64 @@ export const keypads: KeypadConfig[] = [
   },
   // Example of a second keypad - create more as needed
   {
+    //2
     id: "keypad-2",
     title: "Keypad",
     number: "2",
-    subtitle: "Sala de Estar",
+    subtitle: "Suite Master Esquadria (Guto)",
     buttons: [
-      { label: "Luz Principal", align: "left", type: "standard" },
-      { label: "Abajur", align: "left", type: "standard" },
-      { label: "Cortinas", align: "left", type: "standard" },
-      { label: "TV", align: "left", type: "standard" },
-      { label: "Som Ambiente", align: "left", type: "standard" },
-      { label: "Ar Condicionado", align: "right", type: "standard" },
+      // Left side buttons
+      { label: "Luz Principal", align: "left", type: "standard" }, //1
+      { label: "Abajur", align: "left", type: "standard" }, //2
+      { label: "Cortinas", align: "left", type: "standard" }, //3
+      { label: "TV", align: "left", type: "standard" }, //4
+      { label: "Som Ambiente", align: "left", type: "standard" }, //5
+      { label: "Ar Condicionado", align: "right", type: "standard" }, //6
+      // Right side buttons
       {
-        label: "Modo Cinema",
+        label: "Ligar Suite",
         align: "right",
         type: "combo",
-        description: "Luz Principal (50%) + Cortinas + TV",
+        description: "Abajur Guto + Ana + Cortineiro",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/ecce239bcbf03b9a8f4d366d534ad37a42ef8861?placeholderIfAbsent=true",
       },
       {
-        label: "Modo Leitura",
+        label: "Cena Dormir",
         align: "right",
         type: "combo",
-        description: "Abajur + Cortinas (50%)",
+        description:
+          "Desligar Luz Quarto + Ligar Música Suite + Balizador Closet + Luz Spot Divisória Banho Master",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/ecce239bcbf03b9a8f4d366d534ad37a42ef8861?placeholderIfAbsent=true",
       },
       {
-        label: "Desligar Sala",
-        align: "right",
-        type: "combo",
-        description: "Tudo desligado",
+        label: "Abrir Cortinas 1 e 2",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/ecce239bcbf03b9a8f4d366d534ad37a42ef8861?placeholderIfAbsent=true",
+      },
+      {
+        label: "Fechar Cortinas 1 e 2",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/ecce239bcbf03b9a8f4d366d534ad37a42ef8861?placeholderIfAbsent=true",
+      },
+      {
+        label: "Ar Condicionado Suite / 21˚",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/ecce239bcbf03b9a8f4d366d534ad37a42ef8861?placeholderIfAbsent=true",
+      },
+      {
+        label: "Desligar Tudo",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/ecce239bcbf03b9a8f4d366d534ad37a42ef8861?placeholderIfAbsent=true",
       },
     ],
   },
