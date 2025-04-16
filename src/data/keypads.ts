@@ -20,19 +20,22 @@ export const keypads: KeypadConfig[] = [
     id: "keypad-1",
     title: "Keypad",
     number: "1",
-    subtitle: "Mudroom Mudroom",
+    subtitle: "Suíte Master Closet",
     buttons: [
       {
-        label: "Spot Entrada",
+        label: "Ligar Suíte",
         align: "left",
-        type: "standard",
+        type: "combo",
+        description: "Abajur Guto + Ana + Cortineiro",
         imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
       {
-        label: "Spot Sofá",
+        label: "Cena dormir",
         align: "left",
-        type: "standard",
+        type: "combo",
+        description:
+          "Desliga Luz Quarto + Ligar Música Suite + Balizador Closet + Luz Spot Divisória Banho Master",
         imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/45ca1fe83a76683fda5fb7142f84d30623446069?placeholderIfAbsent=true",
       },
