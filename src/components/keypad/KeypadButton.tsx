@@ -14,13 +14,13 @@ export const KeypadButton = ({
 }: KeypadButtonProps) => {
   const buttonContent = (
     <>
-      <div className="flex flex-col items-stretch justify-center w-3">
-        <div className="rounded border border-[color:var(--PALM-PRIMA,#1E09BB)] flex min-h-[9px] w-3 border-solid" />
-      </div>
       <div
         className={`min-w-60 text-lg text-[#1E09BB] font-medium uppercase tracking-[0.9px] leading-[1.1] flex-1 shrink basis-[0%] my-auto ${align === "right" ? "text-right" : "text-left"}`}
       >
         {label}
+      </div>
+      <div className="flex flex-col items-stretch justify-center w-3">
+        <div className="rounded border border-[color:var(--PALM-PRIMA,#1E09BB)] flex min-h-[9px] w-3 border-solid" />
       </div>
     </>
   );
@@ -35,4 +35,3 @@ export const KeypadButton = ({
     </button>
   );
 };
-
