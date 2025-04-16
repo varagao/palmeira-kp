@@ -3,6 +3,7 @@ import { keypads } from "@/data/keypads";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 
 const KeypadsList = () => {
   const [localKeypads, setLocalKeypads] = useState(keypads);
@@ -42,11 +43,12 @@ const KeypadsList = () => {
         
         <Separator className="w-full h-0.5 bg-[#1E09BB] mb-6" />
         
-        <Link 
-          to="/keypad-editor"
-          className="text-xl text-[#1E09BB] uppercase font-medium hover:underline"
-        >
-          All Keypads
+        <Link to="/keypad-editor">
+          <Button 
+            className="bg-[#1E09BB] hover:bg-[#1E09BB]/90 text-white uppercase"
+          >
+            Edit Keypad Configurations
+          </Button>
         </Link>
       </div>
     </div>
