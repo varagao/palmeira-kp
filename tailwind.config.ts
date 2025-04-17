@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -93,9 +94,10 @@ export default {
       fontFamily: {
         'custom': ['CustomFont', 'sans-serif'],
         'ibm-plex': ['IBM Plex Sans', 'sans-serif'],
-        'typekit': ['your-typekit-font-name', 'sans-serif']
+        'typekit': ['linotype-sabon', 'serif']
       }
     }
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
