@@ -24,21 +24,24 @@ export const KeypadView: React.FC<KeypadViewProps> = ({ keypad }) => {
 
   // Render a button and its image if available
   const renderButton = (button: KeypadButtonType, index: number) => {
+    const buttonComponent = button.type === "combo" ? (
+      <KeypadComboButton
+        key={`button-${index}`}
+        title={button.label}
+        description={button.description || ""}
+        align={button.align}
+      />
+    ) : (
+      <KeypadButton
+        key={`button-${index}`}
+        label={button.label}
+        align={button.align}
+      />
+    );
+
     return (
-      <div key={`button-container-${index}`} className="mb-4">
-        {button.type === "combo" ? (
-          <KeypadComboButton
-            title={button.label}
-            description={button.description || ""}
-            align={button.align}
-          />
-        ) : (
-          <KeypadButton
-            label={button.label}
-            align={button.align}
-          />
-        )}
-        
+      <React.Fragment key={`fragment-${index}`}>
+        {buttonComponent}
         {button.imagePath && (
           <img 
             src={button.imagePath} 
@@ -46,7 +49,7 @@ export const KeypadView: React.FC<KeypadViewProps> = ({ keypad }) => {
             className="object-contain w-full mt-3"
           />
         )}
-      </div>
+      </React.Fragment>
     );
   };
 

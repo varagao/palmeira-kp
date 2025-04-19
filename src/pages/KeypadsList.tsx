@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
 
 const KeypadsList = () => {
   const [localKeypads, setLocalKeypads] = useState(keypads);
@@ -14,27 +13,12 @@ const KeypadsList = () => {
     const savedKeypads = localStorage.getItem('keypads');
     if (savedKeypads) {
       try {
-        const parsedKeypads = JSON.parse(savedKeypads);
-        setLocalKeypads(parsedKeypads);
+        setLocalKeypads(JSON.parse(savedKeypads));
       } catch (error) {
         console.error("Error parsing saved keypads:", error);
-        // If there's an error parsing the saved keypads, fall back to the default keypads
-        setLocalKeypads(keypads);
-        localStorage.setItem('keypads', JSON.stringify(keypads));
-        toast.error("Error loading saved keypads. Default keypads restored.");
       }
-    } else {
-      // If no saved keypads exist, save the default keypads to localStorage
-      localStorage.setItem('keypads', JSON.stringify(keypads));
     }
   }, []);
-
-  // Reset to defaults function (useful for troubleshooting)
-  const resetToDefaults = () => {
-    localStorage.setItem('keypads', JSON.stringify(keypads));
-    setLocalKeypads(keypads);
-    toast.success("Keypads reset to defaults");
-  };
 
   return (
     <div className="bg-[#CCFFF2] min-h-screen flex flex-col items-center">
@@ -59,23 +43,13 @@ const KeypadsList = () => {
         
         <Separator className="w-full h-0.5 bg-[#1E09BB] mb-6" />
         
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Link to="/keypad-editor">
-            <Button 
-              className="bg-[#1E09BB] hover:bg-[#1E09BB]/90 text-white uppercase"
-            >
-              Edit Keypad Configurations
-            </Button>
-          </Link>
-          
+        <Link to="/keypad-editor">
           <Button 
-            variant="outline" 
-            className="text-[#1E09BB] border-[#1E09BB]"
-            onClick={resetToDefaults}
+            className="bg-[#1E09BB] hover:bg-[#1E09BB]/90 text-white uppercase"
           >
-            Reset to Defaults
+            Edit Keypad Configurations
           </Button>
-        </div>
+        </Link>
       </div>
     </div>
   );
