@@ -1,8 +1,7 @@
 
 import { keypads } from "@/data/keypads";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { toast } from "sonner";
+import { useEffect } from "react";
 
 const Index = () => {
   const navigate = useNavigate();
