@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from "react";
 
 interface KeypadButtonProps {
   label: string;
@@ -20,23 +19,26 @@ export const KeypadButton = ({
 
   const textElement = (
     <div
-      className={`min-w-60 text-lg text-[#1E09BB] font-medium uppercase tracking-[0.9px] leading-[1.1] flex-1 shrink basis-[0%] my-auto ${align === "right" ? "text-right" : "text-left"}`}
+      className={`min-w-60 text-lg text-[#1E09BB] font-ibm-plex uppercase tracking-[0.9px] leading-[1.1] flex-1 shrink basis-[0%] my-auto ${
+        align === "right" ? "text-right" : "text-left"
+      }`}
     >
       {label}
     </div>
   );
 
-  const buttonContent = align === "left" ? (
-    <>
-      {iconElement}
-      {textElement}
-    </>
-  ) : (
-    <>
-      {textElement}
-      {iconElement}
-    </>
-  );
+  const buttonContent =
+    align === "left" ? (
+      <>
+        {iconElement}
+        {textElement}
+      </>
+    ) : (
+      <>
+        {textElement}
+        {iconElement}
+      </>
+    );
 
   return (
     <button

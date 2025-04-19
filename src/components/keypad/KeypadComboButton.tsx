@@ -1,4 +1,3 @@
-
 interface KeypadComboButtonProps {
   title: string;
   description?: string;
@@ -23,28 +22,29 @@ export const KeypadComboButton = ({
       className="min-w-60 text-[#1E09BB] flex-1 shrink basis-[0%] my-auto"
       style={{ textAlign: align }}
     >
-      <div className="text-lg font-medium leading-[1.1] tracking-[0.9px] uppercase">
+      <div className="text-lg font-ibm-plex leading-[1.1] tracking-[0.9px] uppercase">
         {title}
       </div>
       {description && (
-        <div className="text-sm font-normal leading-[18px] tracking-[0.42px] lowercase mt-2">
+        <div className="text-sm font-ibm-plex leading-[20px] tracking-[0.8px] mt-2">
           {description}
         </div>
       )}
     </div>
   );
 
-  const buttonContent = align === "left" ? (
-    <>
-      {iconElement}
-      {textElement}
-    </>
-  ) : (
-    <>
-      {textElement}
-      {iconElement}
-    </>
-  );
+  const buttonContent =
+    align === "left" ? (
+      <>
+        {iconElement}
+        {textElement}
+      </>
+    ) : (
+      <>
+        {textElement}
+        {iconElement}
+      </>
+    );
 
   return (
     <button
