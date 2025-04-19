@@ -27,7 +27,7 @@ const KeypadsList = () => {
         <Separator className="w-full h-0.5 bg-[#1E09BB] mb-6" />
         
         <div className="grid grid-cols-3 gap-6 w-full mb-6">
-          {localKeypads.slice(0, 9).map((keypad, index) => (
+          {localKeypads.map((keypad, index) => (
             <Link 
               key={keypad.id}
               to={`/keypad/${keypad.id}`}
