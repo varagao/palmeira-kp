@@ -30,7 +30,7 @@ export const keypads: KeypadConfig[] = [
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
       {
-        label: "Cena dormir",
+        label: "AAAAAAA dormir",
         align: "left",
         type: "combo",
         description:
