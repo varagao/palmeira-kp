@@ -26,7 +26,7 @@ export const KeypadComboButton = ({
         {title}
       </div>
       {description && (
-        <div className="text-sm font-ibm-plex leading-[20px] tracking-[0.8px] mt-2">
+        <div className="text-sm font-ibm-plex leading-[20px] tracking-[0.2px] mt-1">
           {description}
         </div>
       )}
