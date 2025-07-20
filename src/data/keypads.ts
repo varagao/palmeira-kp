@@ -14,9 +14,9 @@ export interface KeypadConfig {
   buttons: KeypadButton[];
 }
 
-// KP1
 export const keypads: KeypadConfig[] = [
   {
+    // KP1
     id: "keypad-1",
     title: "Keypad",
     number: "1",
