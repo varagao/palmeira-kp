@@ -23,12 +23,48 @@ export const keypads: KeypadConfig[] = [
     subtitle: "Suíte Master Closet",
     buttons: [
       //1 E
-      { label: "Spot Cama Suíte", align: "left", type: "standard" },
-      { label: "Cortineiro Suíte", align: "left", type: "standard" },
-      { label: "Abajur Guto", align: "left", type: "standard" },
-      { label: "Abajur Ana", align: "left", type: "standard" },
-      { label: "Balizador Closet", align: "left", type: "standard" },
-      { label: "Balizador Closet", align: "left", type: "standard" },
+      {
+        label: "Spot Cama Suíte",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Cortineiro Suíte",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Abajur Guto",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Abajur Ana",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Balizador Closet",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Balizador Closet",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
       { label: "Música Suite Master", align: "left", type: "standard" },
       //1 D
       {
@@ -36,6 +72,8 @@ export const keypads: KeypadConfig[] = [
         align: "right",
         type: "combo",
         description: "Abajur Guto + Ana + Cortineiro",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
       {
         label: "Cena Dormir",
@@ -43,10 +81,30 @@ export const keypads: KeypadConfig[] = [
         type: "combo",
         description:
           "Desligar Luz Quarto + Ligar Música Suite + Balizador Closet + Luz Spot Divisória Banho Master",
+        magePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
-      { label: "Abrir Cortinas 1 e 2", align: "right", type: "standard" },
-      { label: "Fechar Cortinas 1 e 2", align: "right", type: "standard" },
-      { label: "Ar Condicionado Suite 21˚", align: "right", type: "standard" },
+      {
+        label: "Abrir Cortinas 1 e 2",
+        align: "right",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Fechar Cortinas 1 e 2",
+        align: "right",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Ar Condicionado Suite 21˚",
+        align: "right",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
       { label: "Desligar Tudo", align: "right", type: "standard" },
     ],
   },
