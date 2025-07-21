@@ -42,7 +42,7 @@ export const KeypadButton = ({
 
   return (
     <button
-      className={`flex w-full items-stretch gap-4 px-4 py-0 hover:bg-[#1E09BB]/5 transition-colors`}
+      className={`flex w-full items-stretch gap-4 px-4 py-1 hover:bg-[#1E09BB]/5 transition-colors`}
       onClick={onClick}
       type="button"
     >
