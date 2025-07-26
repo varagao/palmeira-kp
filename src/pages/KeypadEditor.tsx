@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,18 +7,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { keypads, KeypadConfig } from "@/data/keypads";
 import { toast } from "sonner";
 
-// Create a local copy of keypads that we can modify
-// This is necessary because we can't directly modify the imported constant
 const KeypadEditor = () => {
   const navigate = useNavigate();
   const [selectedKeypad, setSelectedKeypad] = useState<string>(keypads[0].id);
   
-  // Create a mutable copy of the keypads array
-  const [localKeypads, setLocalKeypads] = useState<KeypadConfig[]>([...keypads]);
-  
-  // State for the JSON editor
+  // State for the JSON editor - load directly from keypads file
   const [keypadData, setKeypadData] = useState<string>(
-    JSON.stringify(localKeypads, null, 2)
+    JSON.stringify(keypads, null, 2)
   );
   
   const handleSave = () => {
@@ -26,16 +21,9 @@ const KeypadEditor = () => {
       // Parse and validate the JSON
       const updatedKeypads = JSON.parse(keypadData) as KeypadConfig[];
       
-      // Update our local state
-      setLocalKeypads(updatedKeypads);
+      toast.success("Keypad configurations validated! Note: Changes are only temporary in this demo.");
+      toast.info("To make permanent changes, update the keypads.ts file directly.");
       
-      // Store in localStorage for persistence
-      localStorage.setItem('keypads', keypadData);
-      
-      toast.success("Keypad configurations saved!");
-      
-      // Force reload to apply changes (in a real app, we would use context or state management)
-      window.location.reload();
     } catch (error) {
       toast.error("Invalid JSON format. Please check your syntax.");
     }
@@ -43,9 +31,6 @@ const KeypadEditor = () => {
   
   const handleKeypadSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedKeypad(e.target.value);
-    
-    // For this demo, we're showing all keypads in the editor
-    // In a real app, we might filter to show only the selected keypad
   };
   
   const exportConfigAsFile = () => {
@@ -94,7 +79,7 @@ const KeypadEditor = () => {
             onChange={handleKeypadSelect}
             className="w-full p-2 border border-gray-300 rounded-md"
           >
-            {localKeypads.map(keypad => (
+            {keypads.map(keypad => (
               <option key={keypad.id} value={keypad.id}>
                 Keypad {keypad.number} - {keypad.subtitle}
               </option>
@@ -118,7 +103,7 @@ const KeypadEditor = () => {
       <div className="flex flex-col sm:flex-row gap-4 justify-between">
         <div className="flex gap-4">
           <Button onClick={handleSave} className="bg-[#1E09BB]">
-            Save Changes
+            Validate Changes
           </Button>
           <Button onClick={() => navigate("/keypads")} variant="outline">
             Cancel
