@@ -1,3 +1,28 @@
+import { Lightbulb, Music, Wind, RectangleHorizontal, Power } from "lucide-react";
+
+const getIconForLabel = (label: string) => {
+  const lowercaseLabel = label.toLowerCase();
+  
+  if (lowercaseLabel.includes('spot') || lowercaseLabel.includes('luz') || lowercaseLabel.includes('abajur') || lowercaseLabel.includes('led')) {
+    return <Lightbulb size={16} className="text-[#1E09BB]" />;
+  }
+  if (lowercaseLabel.includes('música') || lowercaseLabel.includes('music') || lowercaseLabel.includes('som')) {
+    return <Music size={16} className="text-[#1E09BB]" />;
+  }
+  if (lowercaseLabel.includes('ar condicionado') || lowercaseLabel.includes('ac')) {
+    return <Wind size={16} className="text-[#1E09BB]" />;
+  }
+  if (lowercaseLabel.includes('janela') || lowercaseLabel.includes('window') || lowercaseLabel.includes('cortineiro')) {
+    return <RectangleHorizontal size={16} className="text-[#1E09BB]" />;
+  }
+  if (lowercaseLabel.includes('desligar') || lowercaseLabel.includes('off') || lowercaseLabel.includes('shut')) {
+    return <Power size={16} className="text-[#1E09BB]" />;
+  }
+  
+  // Default icon for other categories
+  return <Lightbulb size={16} className="text-[#1E09BB]" />;
+};
+
 interface KeypadComboButtonProps {
   title: string;
   description?: string;
@@ -13,7 +38,7 @@ export const KeypadComboButton = ({
 }: KeypadComboButtonProps) => {
   const iconElement = (
     <div className="flex flex-col items-stretch justify-center w-3">
-      <div className="rounded border border-[color:var(--PALM-PRIMA,#1E09BB)] flex min-h-[9px] w-3 border-solid" />
+      {getIconForLabel(title)}
     </div>
   );
 
