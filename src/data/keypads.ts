@@ -367,7 +367,7 @@ export const keypads: KeypadConfig[] = [
     id: "keypad-5",
     title: "Keypad",
     number: "5",
-    subtitle: "Gourmet",
+    subtitle: "Perto do Mudroom",
     buttons: [
       //5 E
       {
