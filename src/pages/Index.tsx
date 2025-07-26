@@ -7,12 +7,8 @@ const Index = () => {
   const navigate = useNavigate();
   
   useEffect(() => {
-    // Always ensure we have keypads in localStorage
-    const savedKeypads = localStorage.getItem('keypads');
-    if (!savedKeypads) {
-      // If no saved keypads, initialize with default
-      localStorage.setItem('keypads', JSON.stringify(keypads));
-    }
+    // Force refresh of keypads data to ensure latest changes are loaded
+    localStorage.setItem('keypads', JSON.stringify(keypads));
     
     // Navigate to the keypads list
     navigate('/keypads');
