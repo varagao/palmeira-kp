@@ -17,7 +17,11 @@ const KeypadPage = () => {
     return <Navigate to="/keypads" />;
   }
   
-  return <KeypadView keypad={keypad} />;
+  return (
+    <div className="bg-[#CCFFF2] min-h-screen flex justify-center">
+      <KeypadView keypad={keypad} />
+    </div>
+  );
 };
 
 export default KeypadPage;
