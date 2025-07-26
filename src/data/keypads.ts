@@ -460,14 +460,40 @@ export const keypads: KeypadConfig[] = [
     subtitle: "Gourmet",
     buttons: [
       //6 E
-      { label: "LED Gourmet", align: "left", type: "standard" },
-      { label: "Spot Gourmet", align: "left", type: "standard" },
-      { label: "Armario Gourmet", align: "left", type: "standard" },
-      { label: "Cortineiro Gourmet", align: "left", type: "standard" },
+      {
+        label: "LED Gourmet",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Spot Gourmet",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Armario Gourmet",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Cortineiro Gourmet",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
       {
         label: "Música Varanda Gourmet - Playlist",
         align: "left",
         type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
       { label: "Música Gourmet - Playlist", align: "left", type: "standard" },
       //6 D
@@ -476,19 +502,37 @@ export const keypads: KeypadConfig[] = [
         align: "right",
         type: "combo",
         description: "Armário + Cortineiro + Led Gourmet + Spot Gourmet",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
-      { label: "Jardim Academia", align: "right", type: "standard" },
-      { label: "Jardim Fundos", align: "right", type: "standard" },
+      {
+        label: "Jardim Academia",
+        align: "right",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Jardim Fundos",
+        align: "right",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
       {
         label: "Ligar Gourmet Indireto",
         align: "right",
         type: "combo",
         description: "Armário + Cortineiro",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
       {
         label: "Varanda Gourmet + Banco Gourmet",
         align: "right",
         type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
       {
         label: "Desligar Tudo",
@@ -507,11 +551,41 @@ export const keypads: KeypadConfig[] = [
     subtitle: "Sala de TV",
     buttons: [
       //7 E
-      { label: "Entrada Sala", align: "left", type: "standard" },
-      { label: "Sofá", align: "left", type: "standard" },
-      { label: "Abajur", align: "left", type: "standard" },
-      { label: "TV + receiver", align: "left", type: "standard" },
-      { label: "Blu ray + receiver", align: "left", type: "standard" },
+      {
+        label: "Entrada Sala",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Sofá",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Abajur",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "TV + receiver",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
+      {
+        label: "Blu ray + receiver",
+        align: "left",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
       { label: "Rádio Sala de TV", align: "left", type: "standard" },
       //7 D
       {
@@ -519,25 +593,39 @@ export const keypads: KeypadConfig[] = [
         align: "right",
         type: "combo",
         description: "Luzes Entrada + Sofá + Abajur",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
       {
         label: "Ligar Netflix",
         align: "right",
         type: "combo",
         description: "Luz Abajur + TV + Receiver + Netflix",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
       {
         label: "Ligar Bluray",
         align: "right",
         type: "combo",
         description: "Luz Abajur + TV + Receiver + Bluray",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
       {
         label: "Ligar Entrada Sala + Abajur",
         align: "right",
         type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
       },
-      { label: "Ar Condicionado 21˚", align: "right", type: "standard" },
+      {
+        label: "Ar Condicionado 21˚",
+        align: "right",
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+      },
       {
         label: "Desligar Tudo",
         align: "right",
