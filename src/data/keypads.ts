@@ -593,38 +593,40 @@ export const keypads: KeypadConfig[] = [
         align: "right",
         type: "combo",
         description: "Luzes Entrada + Sofá + Abajur",
-        imagePath:
+                imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "Ligar Netflix",
         align: "right",
         type: "combo",
         description: "Luz Abajur + TV + Receiver + Netflix",
-        imagePath:
+                imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "Ligar Bluray",
         align: "right",
         type: "combo",
         description: "Luz Abajur + TV + Receiver + Bluray",
-        imagePath:
+                imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "Ligar Entrada Sala + Abajur",
         align: "right",
         type: "standard",
-        imagePath:
+                imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
-      {
-        label: "Ar Condicionado 21˚",
-        align: "right",
-        type: "standard",
-        imagePath:
+      { label: "Ar Condicionado 21˚", align: "right", type: "standard",
+                imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "Desligar Tudo",
@@ -643,27 +645,71 @@ export const keypads: KeypadConfig[] = [
     subtitle: "Cozinha",
     buttons: [
       //8 E
-      { label: "Armário Cozinha", align: "left", type: "standard" },
-      { label: "Bancada Cozinha", align: "left", type: "standard" },
-      { label: "LED Cozinha", align: "left", type: "standard" },
-      { label: "Area de Servico", align: "left", type: "standard" },
-      { label: "Pendentes sala de jantar", align: "left", type: "standard" },
-      { label: "Música Cozinha", align: "left", type: "standard" },
+      { label: "Armário Cozinha", align: "left", type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+      },
+      { label: "Bancada Cozinha", align: "left", type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
+      { label: "LED Cozinha", align: "left", type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
+      { label: "Area de Servico", align: "left", type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
+      { label: "Pendentes sala de jantar", align: "left", type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
+      { label: "Música Cozinha", align: "left", type: "standard"}
       //8 D
       {
         label: "Ligar Cozinha",
         align: "right",
         type: "combo",
         description: "Armario + Bancada + Led",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "Ligar Area de Servico + Garagem",
         align: "right",
         type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
-      { label: "Jardim Frente", align: "right", type: "standard" },
-      { label: "Jardim Fundos", align: "right", type: "standard" },
-      { label: "Jardim Academia", align: "right", type: "standard" },
+      { label: "Jardim Frente", 
+        align: "right", 
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+      },
+      { label: "Jardim Fundos", 
+        align: "right", 
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
+      { label: "Jardim Academia", 
+        align: "right", 
+        type: "standard", 
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
       {
         label: "Desligar Tudo",
         align: "right",
@@ -685,15 +731,42 @@ export const keypads: KeypadConfig[] = [
         label: "LED Academia + Cortineiro Academia",
         align: "left",
         type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "LED Yoga + Cortineiro Academia",
         align: "left",
         type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
-      { label: "Banco e Arandela Jacuzzi", align: "left", type: "standard" },
-      { label: "Sauna", align: "left", type: "standard" },
-      { label: "Spot Ducha", align: "left", type: "standard" },
+      { 
+        label: "Banco e Arandela Jacuzzi", 
+        align: "left", 
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
+      { 
+        label: "Sauna", 
+        align: "left", 
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+      },
+      { 
+        label: "Spot Ducha", 
+        align: "left", 
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+      },
       { label: "Música Academia", align: "left", type: "standard" },
       //9 D
       {
@@ -701,24 +774,39 @@ export const keypads: KeypadConfig[] = [
         align: "right",
         type: "combo",
         description: "LED Academia + Cortineiro Academia + Música Academia",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "Ligar Sauna",
         align: "right",
         type: "combo",
         description: "Banco + Arandela + Sauna + Ducha + Musica Jacuzzi",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "Ligar Tudo",
         align: "right",
         type: "combo",
         description: "Academia + yoga + Banco + Arandela + Sauna + Spot",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
-      { label: "Jardim Academia", align: "right", type: "standard" },
+      { 
+        label: "Jardim Academia", 
+        align: "right", 
+        type: "standard" },
       {
         label: "Ar Condicionado Academia 21˚",
         align: "right",
         type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "Desligar Tudo",
@@ -741,15 +829,33 @@ export const keypads: KeypadConfig[] = [
         label: "LED Academia + Cortineiro Academia",
         align: "left",
         type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "LED Yoga + Cortineiro Academia",
         align: "left",
         type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
-      { label: "Banco e Arandela Jacuzzi", align: "left", type: "standard" },
-      { label: "Sauna", align: "left", type: "standard" },
-      { label: "Spot Ducha", align: "left", type: "standard" },
+      { label: "Banco e Arandela Jacuzzi", align: "left", type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
+      { label: "Sauna", align: "left", type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
+      { label: "Spot Ducha", align: "left", type: "standard",
+                imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
       { label: "Música Yoga", align: "left", type: "standard" },
       //10 D
       {
@@ -757,26 +863,48 @@ export const keypads: KeypadConfig[] = [
         align: "right",
         type: "combo",
         description: "LED Yoga + Cortineiro Academia + Música Yoga",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "Ligar Sauna",
         align: "right",
         type: "combo",
         description: "Banco + Arandela + Sauna + Ducha + Musica Jacuzzi",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
       {
         label: "Ligar Tudo",
         align: "right",
         type: "combo",
         description: "Academia + yoga + Banco + Arandela + Sauna + Spot",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
       },
-      { label: "Jardim Academia", align: "right", type: "standard" },
-      { label: "Ar Condicionado Yoga 21˚", align: "right", type: "standard" },
+      { 
+        label: "Jardim Academia", 
+        align: "right", 
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+       },
+      { label: "Ar Condicionado Yoga 21˚", 
+        align: "right", 
+        type: "standard",
+        imagePath:
+          "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
+
+       },
       {
         label: "Desligar Tudo",
         align: "right",
         type: "combo",
         description: "Luzes + Música",
+        
       },
     ],
   },
