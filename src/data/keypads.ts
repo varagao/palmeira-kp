@@ -623,10 +623,11 @@ export const keypads: KeypadConfig[] = [
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
 
       },
-      { label: "Ar Condicionado 21˚", align: "right", type: "standard",
-                imagePath:
+      { label: "Ar Condicionado 21˚", 
+        align: "right", 
+        type: "standard",
+        imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
-
       },
       {
         label: "Desligar Tudo",
@@ -731,15 +732,14 @@ export const keypads: KeypadConfig[] = [
         label: "LED Academia + Cortineiro Academia",
         align: "left",
         type: "standard",
-                imagePath:
+        imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
-
       },
       {
         label: "LED Yoga + Cortineiro Academia",
         align: "left",
         type: "standard",
-                imagePath:
+        imagePath:
           "https://cdn.builder.io/api/v1/image/assets/b3256afd46b8486c87e857b82cbb46f9/b2488fec856a887fb70e5aa4e605bf369b030cc5?placeholderIfAbsent=true",
 
       },
