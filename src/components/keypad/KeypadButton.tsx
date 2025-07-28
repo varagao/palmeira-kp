@@ -1,5 +1,12 @@
 import React from "react";
-import { Lightbulb, Music, Wind, RectangleHorizontal, Power } from "lucide-react";
+import {
+  Lightbulb,
+  Music,
+  Wind,
+  Power,
+  ListChecks,
+  CloudSun,
+} from "lucide-react";
 
 interface KeypadButtonProps {
   label: string;
@@ -9,23 +16,47 @@ interface KeypadButtonProps {
 
 const getIconForLabel = (label: string) => {
   const lowercaseLabel = label.toLowerCase();
-  
-  if (lowercaseLabel.includes('spot') || lowercaseLabel.includes('luz') || lowercaseLabel.includes('abajur') || lowercaseLabel.includes('led')) {
+  if (
+    lowercaseLabel.includes("+") ||
+    lowercaseLabel.includes("combo") ||
+    lowercaseLabel.includes("cena")
+  ) {
+    return <ListChecks size={16} className="text-[#1E09BB]" />;
+  }
+
+  if (
+    lowercaseLabel.includes("spot") ||
+    lowercaseLabel.includes("luz") ||
+    lowercaseLabel.includes("abajur") ||
+    lowercaseLabel.includes("led")
+  ) {
     return <Lightbulb size={16} className="text-[#1E09BB]" />;
   }
-  if (lowercaseLabel.includes('música') || lowercaseLabel.includes('music') || lowercaseLabel.includes('som')) {
+  if (
+    lowercaseLabel.includes("música") ||
+    lowercaseLabel.includes("music") ||
+    lowercaseLabel.includes("som")
+  ) {
     return <Music size={16} className="text-[#1E09BB]" />;
   }
-  if (lowercaseLabel.includes('ar condicionado') || lowercaseLabel.includes('ac')) {
+  if (lowercaseLabel.includes("ar condicionado")) {
     return <Wind size={16} className="text-[#1E09BB]" />;
   }
-  if (lowercaseLabel.includes('janela') || lowercaseLabel.includes('window') || lowercaseLabel.includes('cortineiro')) {
-    return <RectangleHorizontal size={16} className="text-[#1E09BB]" />;
+  if (
+    lowercaseLabel.includes("janela") ||
+    lowercaseLabel.includes("window") ||
+    lowercaseLabel.includes("cortin")
+  ) {
+    return <CloudSun size={16} className="text-[#1E09BB]" />;
   }
-  if (lowercaseLabel.includes('desligar') || lowercaseLabel.includes('off') || lowercaseLabel.includes('shut')) {
+  if (
+    lowercaseLabel.includes("desligar") ||
+    lowercaseLabel.includes("off") ||
+    lowercaseLabel.includes("shut")
+  ) {
     return <Power size={16} className="text-[#1E09BB]" />;
   }
-  
+
   // Default icon for other categories
   return <Lightbulb size={16} className="text-[#1E09BB]" />;
 };
